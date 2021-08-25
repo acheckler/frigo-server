@@ -1,5 +1,4 @@
 const express = require("express");
-const { request } = require("../app");
 const FoodService = require("./food-service");
 
 
@@ -28,13 +27,12 @@ foodRouter
         const kenxInstance = req.app.get('db')
         FoodService.getFoodById(kenxInstance, req.params.id)
         .then(item => {
-            console.log(item)
             if (!item) {
                 return res.status(404).json({
                     error: {message: `item doesn't exist`},
                 });
             }
-            console.log(res.item)
+
             res.item = item;
             next();
         })
@@ -47,9 +45,6 @@ foodRouter
 foodRouter
     .route('/type/:category')
     .all((req, res, next) => {
-        if(req.params.category) {
-            console.log('req param', req.param.category)
-        }
         FoodService.getFoodByCategory(req.app.get('db'), req.params.category)
         .then(item => {
             if (!item) {

@@ -1,4 +1,4 @@
-CREATE TYPE item_type as ENUM ('fruit', 'vegetable', 'meat/seafood', 'dairy', 'misc');
+CREATE TYPE item_type as ENUM ('Fruits', 'Vegetables', 'Meat/Seafood', 'Dairy', 'Miscellaneous');
 
 CREATE TABLE IF NOT EXISTS food (
     id INTEGER PRIMARY KEY,
