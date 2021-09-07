@@ -100,10 +100,9 @@ VALUES
 (323,'Ribs','Meat/Seafood'),
 (324,'Scallops','Meat/Seafood'),
 (325,'Salami','Meat/Seafood'),
-(326,'Ribs','Meat/Seafood'),
-(327,'Tuna','Meat/Seafood'),
-(328,'Tuna Salad','Meat/Seafood'),
-(329,'Chicken Salad','Meat/Seafood'),
+(326,'Tuna','Meat/Seafood'),
+(327,'Tuna Salad','Meat/Seafood'),
+(328,'Chicken Salad','Meat/Seafood'),
 
 /*Dairy*/
 (401, 'Milk', 'Dairy'),
